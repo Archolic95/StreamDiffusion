@@ -16,7 +16,7 @@ from streamdiffusion.image_filter import SimilarImageFilter
 class StreamDiffusion:
     def __init__(
         self,
-        pipe: StableDiffusionPipeline,
+        pipe,
         t_index_list: List[int],
         torch_dtype: torch.dtype = torch.float16,
         width: int = 512,
